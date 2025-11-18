@@ -3,7 +3,7 @@
         "builder": "DOCKERFILE"
     },
     "deploy": {
-        "startCommand": "php artisan migrate && /usr/bin/supervisord -c /etc/supervisord.conf",
+        "startCommand": "CACHE_STORE=file php artisan migrate --force && php artisan config:clear && && /usr/bin/supervisord -c /etc/supervisord.conf",
         "healthcheckPath": "/health",
         "port": 80
     }
