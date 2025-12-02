@@ -87,12 +87,12 @@ const items: MenuItem[] = [
         label: <Link href={Route.BarangKeluar}>Barang Keluar</Link>,
         permission: PERMISSIONS_VIEW_BARANG_KELUAR,
     },
-    {
-        key: Route.PurchaseOrder,
-        icon: <MoneyCollectOutlined />,
-        label: <Link href={Route.PurchaseOrder}>Purchase Order</Link>,
-        permission: PERMISSIONS_VIEW_ORDER,
-    },
+    // {
+    //     key: Route.PurchaseOrder,
+    //     icon: <MoneyCollectOutlined />,
+    //     label: <Link href={Route.PurchaseOrder}>Purchase Order</Link>,
+    //     permission: PERMISSIONS_VIEW_ORDER,
+    // },
     {
         key: Route.KelolaUser,
         icon: <UserOutlined />,
